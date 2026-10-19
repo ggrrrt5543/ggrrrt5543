@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">ggrrrt5543 — Code. Automate. Explore.</title>
+<desc id="desc">Graphite and blue profile banner. Python tools, automation and electronics experiments.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse"><stop stop-color="#101923"/><stop offset="1" stop-color="#0D1117"/></linearGradient>
+<linearGradient id="line" x1="48" y1="0" x2="1232" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#62C6FF"/><stop offset="1" stop-color="#62C6FF" stop-opacity="0.04"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#7BA3C8" stroke-opacity=".045"/></pattern>
+</defs>
+<style>
+.cursor { animation: blink 1.4s steps(1,end) infinite; }
+.signal { animation: travel 7s ease-in-out infinite; }
+@keyframes blink { 0%,54%,100% {opacity:1} 55%,85% {opacity:0.12} }
+@keyframes travel { 0% {transform:translateX(0);opacity:0} 12% {opacity:1} 82% {opacity:1} 100% {transform:translateX(1032px);opacity:0} }
+@media (prefers-reduced-motion: reduce) { .cursor,.signal {animation:none} .signal {opacity:0} }
+</style>
+<rect x="1" y="1" width="1278" height="418" rx="20" fill="url(#bg)" stroke="#283747" stroke-width="2"/>
+<rect x="2" y="2" width="1276" height="416" rx="19" fill="url(#grid)"/>
+<path d="M48 49H1232" stroke="url(#line)" stroke-width="2"/>
+<g class="signal"><path d="M48 49H188" stroke="#A6E3FF" stroke-width="3" stroke-linecap="round"/></g>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="56" y="91" fill="#87A1B9" font-size="16" letter-spacing="3">PERSONAL DEVELOPMENT LAB</text>
+<text x="51" y="190" fill="#F0F6FC" font-size="82" font-weight="700" letter-spacing="-4">ggrrrt5543<tspan fill="#62C6FF">.</tspan></text>
+<text x="56" y="244" fill="#B4C8DA" font-size="29">Code. Automate. Explore.</text>
+<path d="M56 280H112" stroke="#62C6FF" stroke-width="3"/>
+<text x="56" y="322" fill="#8FA8BD" font-size="18">Python tools / Automation / Electronics</text>
+<text x="56" y="379" fill="#71899D" font-size="14" letter-spacing="2">SMALL IDEAS. WORKING TOOLS.</text>
+</g>
+<g transform="translate(806 104)">
+<rect width="418" height="230" rx="12" fill="#111B26" stroke="#304355"/>
+<path d="M0 43H418" stroke="#304355"/>
+<circle cx="22" cy="22" r="4" fill="#5A7186"/><circle cx="38" cy="22" r="4" fill="#5A7186"/><circle cx="54" cy="22" r="4" fill="#5A7186"/>
+<text x="390" y="27" text-anchor="end" font-family="monospace" font-size="13" fill="#8FA8BD">~/workspace</text>
+<g font-family="monospace" font-size="18">
+<text x="24" y="82" fill="#62C6FF">$ ls projects/</text>
+<path d="M30 104V170M30 116H48M30 150H48M30 170H48" stroke="#3E5C74" stroke-width="2"/>
+<text x="60" y="122" fill="#DFEAF3">username-hunter</text>
+<text x="60" y="156" fill="#DFEAF3">EasyEDA-PDF-Builder</text>
+<text x="60" y="184" fill="#8FA8BD" font-size="14">ideas → experiments → tools</text>
+<text x="24" y="213" fill="#62C6FF">$</text><rect class="cursor" x="47" y="199" width="9" height="17" rx="1" fill="#62C6FF"/>
+</g>
+</g>
+</svg>
