@@ -1,59 +1,62 @@
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero-static.png">
-  <img src="./assets/hero.gif" width="100%" alt="ggrrrt5543 — идеи в код, рутину в автоматизацию. Вращающийся знак из частиц, анимированный терминальный текст и кислотно-зелёный акцент.">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/hero-dark-mobile-static.png">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/hero-light-mobile-static.png">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-static.png">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero-light-static.png">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/hero-dark-mobile.gif">
+  <source media="(max-width: 600px)" srcset="./assets/hero-light-mobile.gif">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.gif">
+  <img src="./assets/hero-light.gif" width="100%" alt="ggrrrt5543 — инструменты для автоматизации, AI и электроника.">
 </picture>
 
 <p align="center">
-  <a href="#selected-work">ПРОЕКТЫ</a> &nbsp; / &nbsp;
-  <a href="#toolbox">ТЕХНОЛОГИИ</a> &nbsp; / &nbsp;
-  <a href="https://github.com/ggrrrt5543?tab=repositories">ВСЕ РЕПОЗИТОРИИ ↗</a>
+  <a href="#проекты">Проекты</a> &nbsp; · &nbsp;
+  <a href="#технологии">Технологии</a> &nbsp; · &nbsp;
+  <a href="#обратная-связь">Обратная связь</a>
 </p>
 
-### Меньше ручной работы. Больше своих инструментов.
+Пишу утилиты на **Python**, автоматизирую повторяющиеся задачи и пробую **AI в работе с электронными схемами**. Здесь — мои проекты и эксперименты.
 
-Создаю утилиты для автоматизации и экспериментирую с AI и электроникой.
-От поиска Telegram-юзернеймов до распознавания электронных схем — превращаю идеи в код.
-
-## Selected work
+## Проекты
 
 <a href="https://github.com/ggrrrt5543/username-hunter">
-  <img src="./assets/username-hunter.svg" width="100%" alt="Username Hunter — Python-инструмент поиска Telegram-юзернеймов с Rich-интерфейсом, скорингом и локальной базой.">
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/hunter-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="./assets/hunter-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hunter-dark.svg">
+  <img src="./assets/hunter-light.svg" width="100%" alt="Username Hunter. Поиск и проверка Telegram-юзернеймов, скоринг, слежка и локальная база. Python, Rich, SQLite.">
+</picture>
 </a>
 
-Генерация и проверка имён, эвристический скоринг, слежка и обновления с сохранением данных.
+[Скачать релиз](https://github.com/ggrrrt5543/username-hunter/releases/latest) &nbsp; · &nbsp; [Установка](https://github.com/ggrrrt5543/username-hunter/blob/main/docs/setup.md) &nbsp; · &nbsp; [Ошибки](https://github.com/ggrrrt5543/username-hunter/issues)
 
-[Репозиторий ↗](https://github.com/ggrrrt5543/username-hunter) · [Скачать релиз](https://github.com/ggrrrt5543/username-hunter/releases/latest) · [Установка](https://github.com/ggrrrt5543/username-hunter/blob/main/docs/setup.md)
+<p><br></p>
 
 <a href="https://github.com/ggrrrt5543/EasyEDA-PDF-Builder">
-  <img src="./assets/easyeda.svg" width="100%" alt="PDF to EasyEDA — эксперимент с AI-распознаванием электронных схем. Проект в разработке.">
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/easyeda-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="./assets/easyeda-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/easyeda-dark.svg">
+  <img src="./assets/easyeda-light.svg" width="100%" alt="PDF → EasyEDA. Распознавание схем из PDF и проверка модели цепи. Экспорт SCH/PCB ещё в разработке.">
+</picture>
 </a>
 
-AI-анализ PDF, структурированная модель цепи и проверка данных. **В разработке:** нативный экспорт SCH/PCB ещё не завершён.
+[План разработки](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder#roadmap) &nbsp; · &nbsp; [Ошибки](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder/issues)
 
-[Репозиторий и roadmap ↗](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder#roadmap)
+## Технологии
 
-## Toolbox
+**Языки:** Python · C++  
+**В проектах:** Rich · SQLite · GitHub Actions · API-интеграции
 
-**Код** &nbsp; `Python` · `C++`  
-**В проектах** &nbsp; `Rich TUI` · `SQLite` · `GitHub Actions` · `API-интеграции`
+## Обратная связь
+
+Нашёл ошибку или придумал улучшение? Открой issue в репозитории проекта. [Все репозитории →](https://github.com/ggrrrt5543?tab=repositories)
 
 <details>
-<summary><b>~/lab — коротко обо мне</b></summary>
-
-```text
-> cat about.txt
-name      ggrrrt5543
-focus     tools / automation / experiments
-workflow  idea → code → test → improve
-```
+<summary>Ограничения проектов</summary>
 
 Скоринг Username Hunter — эвристика, а не гарантия цены. Проверка доступности не резервирует имя.
-Автоматически восстановленные электронные схемы требуют инженерной проверки.
+
+Проект PDF → EasyEDA находится в разработке. Автоматически восстановленные схемы требуют инженерной проверки.
 
 </details>
-
----
-
-Есть баг или идея? Открой issue в [Username Hunter](https://github.com/ggrrrt5543/username-hunter/issues) или [EasyEDA PDF Builder](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder/issues).
-
-<p align="center"><sub>GGRRRT5543 / BUILD. TEST. ITERATE.</sub></p>
