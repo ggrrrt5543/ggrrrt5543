@@ -1,56 +1,59 @@
-<p align="center">
-  <img src="./assets/header.svg" width="100%" alt="ggrrrt5543 — Code. Automate. Explore. Python tools, automation and electronics." />
-</p>
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero-static.png">
+  <img src="./assets/hero.gif" width="100%" alt="ggrrrt5543 — идеи в код, рутину в автоматизацию. Вращающийся знак из частиц, анимированный терминальный текст и кислотно-зелёный акцент.">
+</picture>
 
 <p align="center">
-  <a href="#проекты">Проекты</a> &nbsp; / &nbsp;
-  <a href="#технологии">Технологии</a> &nbsp; / &nbsp;
-  <a href="https://github.com/ggrrrt5543?tab=repositories">Все репозитории</a>
+  <a href="#selected-work">ПРОЕКТЫ</a> &nbsp; / &nbsp;
+  <a href="#toolbox">ТЕХНОЛОГИИ</a> &nbsp; / &nbsp;
+  <a href="https://github.com/ggrrrt5543?tab=repositories">ВСЕ РЕПОЗИТОРИИ ↗</a>
 </p>
 
-## Привет, я ggrrrt5543
+### Меньше ручной работы. Больше своих инструментов.
 
-Создаю инструменты для автоматизации и экспериментирую с AI и электроникой.
-Здесь — мои проекты: от терминальных утилит до работы с электронными схемами.
+Создаю утилиты для автоматизации и экспериментирую с AI и электроникой.
+От поиска Telegram-юзернеймов до распознавания электронных схем — превращаю идеи в код.
 
-## Проекты
+## Selected work
 
-### [Username Hunter ↗](https://github.com/ggrrrt5543/username-hunter)
+<a href="https://github.com/ggrrrt5543/username-hunter">
+  <img src="./assets/username-hunter.svg" width="100%" alt="Username Hunter — Python-инструмент поиска Telegram-юзернеймов с Rich-интерфейсом, скорингом и локальной базой.">
+</a>
 
-**Поиск Telegram-юзернеймов без хаоса в терминале.**
+Генерация и проверка имён, эвристический скоринг, слежка и обновления с сохранением данных.
 
-Генерация вариантов, проверка доступности, эвристический скоринг и слежка за выбранными именами. Rich-интерфейс, локальная база и обновления с сохранением пользовательских данных.
+[Репозиторий ↗](https://github.com/ggrrrt5543/username-hunter) · [Скачать релиз](https://github.com/ggrrrt5543/username-hunter/releases/latest) · [Установка](https://github.com/ggrrrt5543/username-hunter/blob/main/docs/setup.md)
 
-`Python` · `Rich TUI` · `SQLite` · `Telegram API`
+<a href="https://github.com/ggrrrt5543/EasyEDA-PDF-Builder">
+  <img src="./assets/easyeda.svg" width="100%" alt="PDF to EasyEDA — эксперимент с AI-распознаванием электронных схем. Проект в разработке.">
+</a>
 
-[Посмотреть проект](https://github.com/ggrrrt5543/username-hunter) · [Скачать релиз](https://github.com/ggrrrt5543/username-hunter/releases/latest) · [Инструкция](https://github.com/ggrrrt5543/username-hunter/blob/main/docs/setup.md)
+AI-анализ PDF, структурированная модель цепи и проверка данных. **В разработке:** нативный экспорт SCH/PCB ещё не завершён.
 
-> Результат проверки не резервирует имя. Скоринг — эвристика, а не гарантия рыночной стоимости.
+[Репозиторий и roadmap ↗](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder#roadmap)
 
----
-
-### [EasyEDA PDF Builder ↗](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder)
-
-**Из PDF со схемой — к структурированной модели цепи.**
-
-Проект по восстановлению электронных схем с помощью AI: анализ PDF, структурирование компонентов и соединений, проверка данных. Цель — экспорт схем и плат в EasyEDA Standard.
-
-`AI / Vision` · `PDF processing` · `Electronics` · `EasyEDA`
-
-**В разработке.** Нативный экспорт SCH/PCB ещё не завершён.
-
-[Посмотреть проект и roadmap](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder#roadmap)
-
-## Технологии
+## Toolbox
 
 **Код** &nbsp; `Python` · `C++`  
-**В проектах** &nbsp; `Rich` · `SQLite` · `GitHub Actions` · `API-интеграции`
+**В проектах** &nbsp; `Rich TUI` · `SQLite` · `GitHub Actions` · `API-интеграции`
 
-## Обратная связь
+<details>
+<summary><b>~/lab — коротко обо мне</b></summary>
 
-Нашёл ошибку или придумал улучшение? Открой issue в нужном репозитории:
-[Username Hunter](https://github.com/ggrrrt5543/username-hunter/issues) · [EasyEDA PDF Builder](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder/issues).
+```text
+> cat about.txt
+name      ggrrrt5543
+focus     tools / automation / experiments
+workflow  idea → code → test → improve
+```
+
+Скоринг Username Hunter — эвристика, а не гарантия цены. Проверка доступности не резервирует имя.
+Автоматически восстановленные электронные схемы требуют инженерной проверки.
+
+</details>
 
 ---
 
-<p align="center"><sub>Идея → эксперимент → рабочий инструмент.</sub></p>
+Есть баг или идея? Открой issue в [Username Hunter](https://github.com/ggrrrt5543/username-hunter/issues) или [EasyEDA PDF Builder](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder/issues).
+
+<p align="center"><sub>GGRRRT5543 / BUILD. TEST. ITERATE.</sub></p>
