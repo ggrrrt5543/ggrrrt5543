@@ -12,19 +12,19 @@
 <p align="center">
   <a href="#проекты">Проекты</a> &nbsp; · &nbsp;
   <a href="#технологии">Технологии</a> &nbsp; · &nbsp;
-  <a href="#обратная-связь">Обратная связь</a>
+  <a href="https://ggrrrt5543.github.io/ggrrrt5543/">Портфолио ↗</a>
 </p>
 
-Пишу утилиты на **Python**, автоматизирую повторяющиеся задачи и пробую **AI в работе с электронными схемами**. Здесь — мои проекты и эксперименты.
+Пишу инструменты на **Python и C++**, автоматизирую задачи в Telegram и экспериментирую с **AI и электроникой**. Ниже — основные проекты; учебные работы собраны отдельно.
 
 ## Проекты
 
 <a href="https://github.com/ggrrrt5543/username-hunter">
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/hunter-dark-mobile.svg">
-  <source media="(max-width: 600px)" srcset="./assets/hunter-light-mobile.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hunter-dark.svg">
-  <img src="./assets/hunter-light.svg" width="100%" alt="Username Hunter. Поиск и проверка Telegram-юзернеймов, скоринг, слежка и локальная база. Python, Rich, SQLite.">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/showcase/hunter-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="./assets/showcase/hunter-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/showcase/hunter-dark.svg">
+  <img src="./assets/showcase/hunter-light.svg" width="100%" alt="Username Hunter. Поиск и проверка Telegram-юзернеймов. Скоринг, слежка и локальная база. Python · Rich · SQLite">
 </picture>
 </a>
 
@@ -32,31 +32,75 @@
 
 <p><br></p>
 
-<a href="https://github.com/ggrrrt5543/EasyEDA-PDF-Builder">
+<a href="https://github.com/ggrrrt5543/shpargalka-bot">
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/easyeda-dark-mobile.svg">
-  <source media="(max-width: 600px)" srcset="./assets/easyeda-light-mobile.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/easyeda-dark.svg">
-  <img src="./assets/easyeda-light.svg" width="100%" alt="PDF → EasyEDA. Распознавание схем из PDF и проверка модели цепи. Экспорт SCH/PCB ещё в разработке.">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/showcase/shpargalka-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="./assets/showcase/shpargalka-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/showcase/shpargalka-dark.svg">
+  <img src="./assets/showcase/shpargalka-light.svg" width="100%" alt="Шпаргалка-бот. Задачи по фото и тексту, AI-проверка и подробные решения в Telegram Mini App. Python · Qwen · Mini App">
 </picture>
 </a>
 
-[План разработки](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder#roadmap) &nbsp; · &nbsp; [Ошибки](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder/issues)
+[Описание и запуск](https://github.com/ggrrrt5543/shpargalka-bot#readme) &nbsp; · &nbsp; [Исходный код](https://github.com/ggrrrt5543/shpargalka-bot)
+
+<p><br></p>
+
+<a href="https://github.com/ggrrrt5543/tg-autoresponder">
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/showcase/autoresponder-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="./assets/showcase/autoresponder-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/showcase/autoresponder-dark.svg">
+  <img src="./assets/showcase/autoresponder-light.svg" width="100%" alt="TG Autoresponder. Автоответы в выбранных Telegram-чатах. Правила по сумме и настраиваемый ответ. C++ · TDLib · MTProto">
+</picture>
+</a>
+
+[Описание и запуск](https://github.com/ggrrrt5543/tg-autoresponder#readme) &nbsp; · &nbsp; [Исходный код](https://github.com/ggrrrt5543/tg-autoresponder)
+
+<p><br></p>
+
+<a href="https://github.com/ggrrrt5543/EasyEDA-PDF-Builder">
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/showcase/easyeda-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="./assets/showcase/easyeda-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/showcase/easyeda-dark.svg">
+  <img src="./assets/showcase/easyeda-light.svg" width="100%" alt="PDF → EasyEDA. Распознавание схем из PDF и проверка модели цепи. Экспорт SCH/PCB пока в разработке. AI · PDF · EasyEDA">
+</picture>
+</a>
+
+[План разработки](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder#roadmap) &nbsp; · &nbsp; [Исходный код](https://github.com/ggrrrt5543/EasyEDA-PDF-Builder)
+
+<p><br></p>
+
+## Учебные работы
+
+<details>
+<summary><b>Arduino, базы данных и практика Git</b></summary>
+
+| Проект | Что внутри |
+| --- | --- |
+| [Шлагбаум на Arduino](https://github.com/ggrrrt5543/kursovoy15) | Виртуальная модель в Wokwi, датчики, Node-RED и журнал в SQLite. |
+| [Журнал событий устройств](https://github.com/ggrrrt5543/kutuzov) | SQL-схема, тестовые данные и запросы для диагностики устройств. |
+| [Практика Git](https://github.com/ggrrrt5543/git-lab) | Лабораторная работа с ветками и файлами. |
+
+</details>
 
 ## Технологии
 
-**Языки:** Python · C++  
-**В проектах:** Rich · SQLite · GitHub Actions · API-интеграции
+**Языки:** Python · C++ · SQL  
+**В проектах:** Rich · TDLib · SQLite · GitHub Actions  
+**Эксперименты:** Telegram Mini App · Arduino · Node-RED · EasyEDA
 
 ## Обратная связь
 
-Нашёл ошибку или придумал улучшение? Открой issue в репозитории проекта. [Все репозитории →](https://github.com/ggrrrt5543?tab=repositories)
+Нашёл ошибку или придумал улучшение? Открой issue в нужном проекте. [Все репозитории →](https://github.com/ggrrrt5543?tab=repositories)
 
 <details>
-<summary>Ограничения проектов</summary>
+<summary>О статусах и ограничениях</summary>
 
-Скоринг Username Hunter — эвристика, а не гарантия цены. Проверка доступности не резервирует имя.
+Описание возможностей взято из README проектов; это не гарантия их работы во всех средах.
 
-Проект PDF → EasyEDA находится в разработке. Автоматически восстановленные схемы требуют инженерной проверки.
+Скоринг Username Hunter — эвристика, а проверка доступности не резервирует имя. Экспорт SCH/PCB в PDF → EasyEDA ещё разрабатывается. AI-решения задач и восстановленные электронные схемы требуют проверки.
+
+Учебный шлагбаум — виртуальная модель, а не система безопасного управления реальным устройством.
 
 </details>
