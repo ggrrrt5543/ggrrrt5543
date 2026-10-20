@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CodeScope — локальная статическая проверка Python, C++, C# и Java. Ошибки по строкам, объяснения и единый отчёт.">
+<meta name="color-scheme" content="light dark"><title>CodeScope — код под наблюдением</title>
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="static/style.css">
+<script src="static/app.js" defer></script>
+</head>
+<body data-demo="true">
+<a class="skip" href="#workspace">Перейти к проверке</a>
+<div class="shell">
+<header class="header"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true">c/</span>CodeScope <span class="version">v1.0.0</span></a><nav aria-label="Основная навигация"><a href="#workspace">Проверка</a><a href="#about">Как работает</a><a href="https://github.com/ggrrrt5543/codescope">GitHub ↗</a><button id="theme" class="icon-button" aria-label="Переключить светлую и тёмную тему">◐</button></nav></header>
+<div id="demo-notice" class="demo-notice" hidden><strong>Демонстрация на GitHub Pages.</strong> Здесь можно изучить готовые примеры, но произвольный код не анализируется. <a href="#install">Установить локальную версию ↗</a></div>
+<main>
+<section class="hero"><div><p class="eyebrow">ЛОКАЛЬНО / СТАТИЧЕСКИЙ АНАЛИЗ</p><h1>Код под<br><span>наблюдением.</span></h1><p class="hero-copy">Найди проблему. Разберись в причине.<br>Python, C++, C# и Java — в одном отчёте.</p></div><div class="hero-note"><span class="note-number">01 — 04</span><p>Твой код остаётся<br>на твоём компьютере.</p><span class="mono subtle">Без аккаунта. Без AI API.</span></div></section>
+<section id="workspace" class="workspace" aria-label="Рабочая область проверки">
+<div class="workspace-heading"><h2><span class="status-dot"></span> Рабочая область</h2><span id="mode-label" class="mono subtle">ЛОКАЛЬНЫЙ АНАЛИЗ / БЕЗ ЗАПУСКА</span></div>
+<div class="work-grid">
+<section class="editor-panel" aria-label="Редактор исходного кода">
+<div class="panel-toolbar"><label class="language-label" for="language">Язык <select id="language"><option value="python">Python</option><option value="cpp">C++</option><option value="csharp">C#</option><option value="java">Java</option></select></label><button id="sample" class="quiet">Пример</button><button id="upload" class="quiet">＋ Файлы</button><input id="files" type="file" accept=".py,.cpp,.cc,.cxx,.h,.hpp,.cs,.java" multiple hidden></div>
+<div id="file-tabs" class="file-tabs" role="group" aria-label="Файлы"></div>
+<div class="filename-row"><label for="filename">Файл</label><input id="filename" value="main.py" spellcheck="false" maxlength="100"><span id="file-size" class="mono subtle"></span></div>
+<div class="code-wrap"><div id="line-numbers" class="line-numbers" aria-hidden="true"></div><label for="code" class="sr-only">Исходный код</label><textarea id="code" spellcheck="false" autocapitalize="off" autocomplete="off" wrap="off" aria-describedby="editor-help"></textarea></div>
+<div class="editor-footer"><span id="editor-help">UTF-8 · до 12 файлов · 256 КБ на файл</span><span class="mono">Ctrl / ⌘ + Enter</span></div>
+<div class="editor-actions"><button id="analyze" class="primary">Проверить код <span aria-hidden="true">↗</span></button><span id="progress" role="status" aria-live="polite">Код не выполняется</span></div>
+</section>
+<section class="report-panel" aria-labelledby="report-heading">
+<div class="report-heading"><h2 id="report-heading">Общий отчёт</h2><span id="report-state" class="mono subtle">ОЖИДАНИЕ</span></div>
+<div id="summary" class="summary"><div><strong id="error-count">—</strong><span>Ошибки</span></div><div><strong id="warning-count">—</strong><span>Замечания</span></div><div><strong id="tool-count">—</strong><span>Инструменты</span></div></div>
+<div class="report-filters" role="group" aria-label="Фильтр результатов"><button data-filter="all" aria-pressed="true">Все</button><button data-filter="error" aria-pressed="false">Ошибки</button><button data-filter="warning" aria-pressed="false">Замечания</button></div>
+<div id="findings" class="findings" aria-live="polite"><div class="empty-state"><span class="empty-mark" aria-hidden="true">[ / ]</span><h3>Сначала — твой код.</h3><p>Вставь код или загрузи файлы.<br>Мы покажем проблемы и номера строк.</p></div></div>
+<details id="coverage"><summary>Покрытие проверки <span id="coverage-label">ещё не проверено</span></summary><ul id="tool-list"></ul></details>
+<div class="export-row"><button id="export-json" disabled>Скачать JSON</button><button id="export-html" disabled>Скачать HTML ↗</button></div>
+<p class="report-disclaimer">Нет найденных ошибок ≠ код точно правильный. Логику задачи проверяют тесты и человек.</p>
+</section>
+</div>
+<div id="error-banner" class="error-banner" role="alert" hidden></div>
+</section>
+<section id="about" class="about"><div><p class="eyebrow">ЧТО ПРОИСХОДИТ ВНУТРИ</p><h2>Не магия.<br>Конкретные проверки.</h2><p>CodeScope собирает результаты анализаторов в один формат. Отдельно показывает, что проверено, а какой инструмент не установлен.</p></div><div class="tool-matrix"><div><strong>Python</strong><span>AST / Ruff / Bandit / Pyright</span></div><div><strong>C++</strong><span>Tree-sitter / G++ / Cppcheck</span></div><div><strong>C#</strong><span>Tree-sitter / Roslyn (.NET 8)</span></div><div><strong>Java</strong><span>Tree-sitter / javac (JDK 17+)</span></div><p>Без компилятора остаётся разбор синтаксиса. Это частичная проверка, а не успешная полная.</p></div></section>
+<section id="install" class="install"><div><p class="eyebrow">НАЧАТЬ ЛОКАЛЬНО</p><h2>Скачай. Запусти. Проверь.</h2><p>Python 3.10+ и Node.js 20+ для Pyright. Компиляторы подключаются отдельно. Docker-образ содержит полный набор инструментов.</p><a href="https://github.com/ggrrrt5543/codescope#быстрый-старт">Инструкция установки ↗</a></div><pre><code>git clone https://github.com/ggrrrt5543/codescope.git
+cd codescope
+python -m venv .venv
+# Активируй .venv для своей ОС
+python -m pip install -e .
+codescope serve</code></pre></section>
+</main>
+<footer><span>CodeScope / автор и поддержка — <a href="https://github.com/ggrrrt5543">ggrrrt5543</a></span><span>v1.0.0 · MIT · Не замена тестам</span></footer>
+</div>
+</body></html>

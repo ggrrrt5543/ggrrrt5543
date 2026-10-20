@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" fill="none" role="img" aria-labelledby="title desc">
-<title id="title">ggrrrt5543 — Code. Automate. Explore.</title>
-<desc id="desc">Graphite and blue profile banner. Python tools, automation and electronics experiments.</desc>
+<title id="title">ggrrrt5543 — Пиши код. Автоматизируй. Исследуй.</title>
+<desc id="desc">Обложка профиля: инструменты на Python, автоматизация и электроника.</desc>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse"><stop stop-color="#101923"/><stop offset="1" stop-color="#0D1117"/></linearGradient>
 <linearGradient id="line" x1="48" y1="0" x2="1232" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#62C6FF"/><stop offset="1" stop-color="#62C6FF" stop-opacity="0.04"/></linearGradient>
@@ -18,12 +18,12 @@
 <path d="M48 49H1232" stroke="url(#line)" stroke-width="2"/>
 <g class="signal"><path d="M48 49H188" stroke="#A6E3FF" stroke-width="3" stroke-linecap="round"/></g>
 <g font-family="Arial, Helvetica, sans-serif">
-<text x="56" y="91" fill="#87A1B9" font-size="16" letter-spacing="3">PERSONAL DEVELOPMENT LAB</text>
+<text x="56" y="91" fill="#87A1B9" font-size="16" letter-spacing="3">ЛИЧНАЯ ЛАБОРАТОРИЯ</text>
 <text x="51" y="190" fill="#F0F6FC" font-size="82" font-weight="700" letter-spacing="-4">ggrrrt5543<tspan fill="#62C6FF">.</tspan></text>
-<text x="56" y="244" fill="#B4C8DA" font-size="29">Code. Automate. Explore.</text>
+<text x="56" y="244" fill="#B4C8DA" font-size="29">Пиши код. Автоматизируй. Исследуй.</text>
 <path d="M56 280H112" stroke="#62C6FF" stroke-width="3"/>
-<text x="56" y="322" fill="#8FA8BD" font-size="18">Python tools / Automation / Electronics</text>
-<text x="56" y="379" fill="#71899D" font-size="14" letter-spacing="2">SMALL IDEAS. WORKING TOOLS.</text>
+<text x="56" y="322" fill="#8FA8BD" font-size="18">Инструменты на Python / Автоматизация / Электроника</text>
+<text x="56" y="379" fill="#71899D" font-size="14" letter-spacing="2">ПРОСТЫЕ ИДЕИ. РАБОЧИЕ ИНСТРУМЕНТЫ.</text>
 </g>
 <g transform="translate(806 104)">
 <rect width="418" height="230" rx="12" fill="#111B26" stroke="#304355"/>
@@ -35,7 +35,7 @@
 <path d="M30 104V170M30 116H48M30 150H48M30 170H48" stroke="#3E5C74" stroke-width="2"/>
 <text x="60" y="122" fill="#DFEAF3">username-hunter</text>
 <text x="60" y="156" fill="#DFEAF3">EasyEDA-PDF-Builder</text>
-<text x="60" y="184" fill="#8FA8BD" font-size="14">ideas → experiments → tools</text>
+<text x="60" y="184" fill="#8FA8BD" font-size="14">идеи → эксперименты → инструменты</text>
 <text x="24" y="213" fill="#62C6FF">$</text><rect class="cursor" x="47" y="199" width="9" height="17" rx="1" fill="#62C6FF"/>
 </g>
 </g>

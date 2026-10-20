@@ -71,6 +71,19 @@
 
 <p><br></p>
 
+<a href="https://github.com/ggrrrt5543/codescope">
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/showcase/codescope-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="./assets/showcase/codescope-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/showcase/codescope-dark.svg">
+  <img src="./assets/showcase/codescope-light.svg" width="100%" alt="CodeScope. Статическая проверка Python, C++, C# и Java. Ошибки по строкам и единый отчёт. Локально, без запуска кода.">
+</picture>
+</a>
+
+[Демо интерфейса](https://ggrrrt5543.github.io/ggrrrt5543/codescope/) &nbsp; · &nbsp; [Установка](https://github.com/ggrrrt5543/codescope#быстрый-старт) &nbsp; · &nbsp; [Релиз](https://github.com/ggrrrt5543/codescope/releases/latest)
+
+<p><br></p>
+
 ## Учебные работы
 
 <details>
@@ -98,6 +111,8 @@
 <summary>О статусах и ограничениях</summary>
 
 Описание возможностей взято из README проектов; это не гарантия их работы во всех средах.
+
+CodeScope выполняет статический анализ, а не доказывает правильность программы; глубина проверки зависит от установленных инструментов.
 
 Скоринг Username Hunter — эвристика, а проверка доступности не резервирует имя. Экспорт SCH/PCB в PDF → EasyEDA ещё разрабатывается. AI-решения задач и восстановленные электронные схемы требуют проверки.
 

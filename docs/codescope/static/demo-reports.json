@@ -1,0 +1,221 @@
+{
+  "python": {
+    "version": "1.0.0",
+    "language": "python",
+    "created_at": "2026-10-20T22:50:15.679096+00:00",
+    "duration_ms": 793,
+    "files": [
+      "main.py"
+    ],
+    "findings": [
+      {
+        "file": "main.py",
+        "line": 7,
+        "column": 16,
+        "severity": "error",
+        "rule": "reportArgumentType",
+        "tool": "Pyright",
+        "message": "Argument of type \"str\" cannot be assigned to parameter \"age\" of type \"int\" in function \"next_age\"\n  \"str\" is not assignable to \"int\"",
+        "help": "Сопоставьте ожидаемый и фактический типы. Добавьте проверку или явное преобразование, если оно соответствует задаче."
+      },
+      {
+        "file": "main.py",
+        "line": 8,
+        "column": 7,
+        "severity": "error",
+        "rule": "F821",
+        "tool": "Ruff",
+        "message": "Undefined name `missing_name`",
+        "help": "Проверьте имя и область видимости переменной; удалите неиспользуемый код. Код правила можно найти в документации Ruff."
+      },
+      {
+        "file": "main.py",
+        "line": 8,
+        "column": 7,
+        "severity": "error",
+        "rule": "reportUndefinedVariable",
+        "tool": "Pyright",
+        "message": "\"missing_name\" is not defined",
+        "help": "Сопоставьте ожидаемый и фактический типы. Добавьте проверку или явное преобразование, если оно соответствует задаче."
+      },
+      {
+        "file": "main.py",
+        "line": 1,
+        "column": 8,
+        "severity": "warning",
+        "rule": "F401",
+        "tool": "Ruff",
+        "message": "`os` imported but unused",
+        "help": "Проверьте имя и область видимости переменной; удалите неиспользуемый код. Код правила можно найти в документации Ruff."
+      }
+    ],
+    "tools": [
+      {
+        "name": "Python AST",
+        "status": "completed",
+        "detail": "Разбор синтаксиса без выполнения кода"
+      },
+      {
+        "name": "Ruff",
+        "status": "completed",
+        "detail": ""
+      },
+      {
+        "name": "Bandit",
+        "status": "completed",
+        "detail": ""
+      },
+      {
+        "name": "Pyright",
+        "status": "completed",
+        "detail": ""
+      }
+    ],
+    "coverage": "completed",
+    "truncated": false,
+    "summary": {
+      "error": 3,
+      "warning": 1,
+      "info": 0
+    },
+    "notice": "Статический анализ не доказывает правильность программы. Код пользователя не запускается; компиляторы могут создавать временные файлы. Внешние зависимости не устанавливаются."
+  },
+  "cpp": {
+    "version": "1.0.0",
+    "language": "cpp",
+    "created_at": "2026-10-20T22:50:15.902588+00:00",
+    "duration_ms": 223,
+    "files": [
+      "main.cpp"
+    ],
+    "findings": [
+      {
+        "file": "main.cpp",
+        "line": 4,
+        "column": 17,
+        "severity": "error",
+        "rule": "compiler",
+        "tool": "G++",
+        "message": "invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]",
+        "help": "Проверьте типы, объявления и зависимости. Для внешних библиотек может потребоваться полное окружение проекта."
+      },
+      {
+        "file": "main.cpp",
+        "line": 4,
+        "column": 15,
+        "severity": "warning",
+        "rule": "AssignmentAddressToInteger",
+        "tool": "Cppcheck",
+        "message": "Assigning a pointer to an integer is not portable.",
+        "help": "Проверьте типы, объявления и зависимости. Для внешних библиотек может потребоваться полное окружение проекта."
+      }
+    ],
+    "tools": [
+      {
+        "name": "Tree-sitter",
+        "status": "completed",
+        "detail": "Разбор синтаксиса без выполнения кода"
+      },
+      {
+        "name": "G++",
+        "status": "completed",
+        "detail": ""
+      },
+      {
+        "name": "Cppcheck",
+        "status": "completed",
+        "detail": ""
+      }
+    ],
+    "coverage": "completed",
+    "truncated": false,
+    "summary": {
+      "error": 1,
+      "warning": 1,
+      "info": 0
+    },
+    "notice": "Статический анализ не доказывает правильность программы. Код пользователя не запускается; компиляторы могут создавать временные файлы. Внешние зависимости не устанавливаются."
+  },
+  "csharp": {
+    "version": "1.0.0",
+    "language": "csharp",
+    "created_at": "2026-10-20T22:50:18.072121+00:00",
+    "duration_ms": 2169,
+    "files": [
+      "Example.cs"
+    ],
+    "findings": [
+      {
+        "file": "Example.cs",
+        "line": 5,
+        "column": 21,
+        "severity": "error",
+        "rule": "CS0029",
+        "tool": "Roslyn / .NET 8",
+        "message": "Cannot implicitly convert type 'string' to 'int'",
+        "help": "Проверьте типы, объявления и зависимости. Для внешних библиотек может потребоваться полное окружение проекта."
+      }
+    ],
+    "tools": [
+      {
+        "name": "Tree-sitter",
+        "status": "completed",
+        "detail": "Разбор синтаксиса без выполнения кода"
+      },
+      {
+        "name": "Roslyn / .NET 8",
+        "status": "completed",
+        "detail": ""
+      }
+    ],
+    "coverage": "completed",
+    "truncated": false,
+    "summary": {
+      "error": 1,
+      "warning": 0,
+      "info": 0
+    },
+    "notice": "Статический анализ не доказывает правильность программы. Код пользователя не запускается; компиляторы могут создавать временные файлы. Внешние зависимости не устанавливаются."
+  },
+  "java": {
+    "version": "1.0.0",
+    "language": "java",
+    "created_at": "2026-10-20T22:50:18.489312+00:00",
+    "duration_ms": 417,
+    "files": [
+      "Main.java"
+    ],
+    "findings": [
+      {
+        "file": "Main.java",
+        "line": 3,
+        "column": 1,
+        "severity": "error",
+        "rule": "compiler",
+        "tool": "Javac",
+        "message": "incompatible types: String cannot be converted to int",
+        "help": "Проверьте типы, объявления и зависимости. Для внешних библиотек может потребоваться полное окружение проекта."
+      }
+    ],
+    "tools": [
+      {
+        "name": "Tree-sitter",
+        "status": "completed",
+        "detail": "Разбор синтаксиса без выполнения кода"
+      },
+      {
+        "name": "Javac",
+        "status": "completed",
+        "detail": ""
+      }
+    ],
+    "coverage": "completed",
+    "truncated": false,
+    "summary": {
+      "error": 1,
+      "warning": 0,
+      "info": 0
+    },
+    "notice": "Статический анализ не доказывает правильность программы. Код пользователя не запускается; компиляторы могут создавать временные файлы. Внешние зависимости не устанавливаются."
+  }
+}
